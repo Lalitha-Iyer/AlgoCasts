@@ -18,7 +18,7 @@ function pyramid(n) {
 
   for(let i =0 ; i <n;i++){
     let level='', up= i+n-1, lb=n-i-1
-    for(let j=0;j< (((n-1)*2)+1);j++){
+    for(let j=0;j< 2*n-1;j++){
         if(j >=lb && j <=up){
             level=level+'#'
         }else{
