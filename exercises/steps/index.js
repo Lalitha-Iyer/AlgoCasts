@@ -17,6 +17,33 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+let i = 1, result = ''
+while(i <= n){
+  result = output(i) + outputSpace(n, i)
+  console.log(result)
+  i++
+}
+
+
+}
+
+function output(n){
+  let i =1, s =''
+  while(i <=n){
+    s = s+'#'
+    i++
+  }
+  return s
+}
+
+function outputSpace(n, level){
+  let i =0, s =''
+  while(i < n-level){
+    s = s+' '
+    i++
+  }
+  return s
+}
 
 module.exports = steps;
